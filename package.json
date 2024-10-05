@@ -1,0 +1,22 @@
+{
+  "name": "avis-ruptures-ramq",
+  "version": "1.0.0",
+  "description": "fonctions nécessaires pour obtenir et manipuler les avis de rupture de stock de la RAMQ",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "Charles Dagenais",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
