@@ -1,5 +1,5 @@
 {
-  "name": "avis-ruptures-ramq",
+  "name": "@chdagenais/avis-ruptures-ramq",
   "version": "1.0.0",
   "description": "fonctions nécessaires pour obtenir et manipuler les avis de rupture de stock de la RAMQ",
   "type": "module",
