@@ -34,7 +34,8 @@ export const getProduitsAvecInfolettreRupture = async (url) => {
                 Teneur: $(tds[3]).text(),
                 DIN: $(tds[4]).text(),
                 DateAvisRupture: $(tds[5]).text(),
-                AvisRuptureURL: $(tds[5]).find("a").attr("href")?.replace("https://www.google.com/url?q=", ""),
+                // enlever https://www.google.com/url?q= au debut de l'url et tout ce qui est après pdf& à la fin
+                AvisRuptureURL: $(tds[5]).find("a").attr("href")?.replace("https://www.google.com/url?q=", "").replace(/pdf&.*/, "pdf"),
                 DateFinAvis: $(tds[6]).text(),
             });
         }
